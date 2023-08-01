@@ -18,6 +18,7 @@ body {
 p {
   color: rgb(85, 85, 85);
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 /* Transition */
@@ -900,4 +901,8 @@ h3.slideshowTitle {
   background: lightgray;
   border-radius: 10px;
   padding: 10px;
+}
+
+.feedback-content {
+  margin-bottom: 0px;
 }
