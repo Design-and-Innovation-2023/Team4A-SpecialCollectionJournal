@@ -13,19 +13,52 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
 p {
-  color: rgb(85, 85, 85);
   font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: rgb(85, 85, 85);
   margin-bottom: 10px;
 }
 
-/* Transition */
+h1 {
+  font-size: 38px;
+  /* Decrease the font size as desired */
+}
+
+h2 {
+  font-size: 30px;
+  /* Decrease the font size as desired */
+}
+
+h3 {
+  font-size: 26px;
+  /* Decrease the font size as desired */
+}
 
 a,
 .btn {
   transition: all 300ms ease;
+}
+
+img {
+  max-width: 550px;
+  height: auto;
+}
+
+/* Footer Section */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
 
 /* Desktop - Nav */
@@ -125,7 +158,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: fit-content;
 }
 
 .hamburger-icon.open span:first-child {
@@ -163,6 +196,52 @@ section {
 
 .section-container {
   display: flex;
+}
+
+.section__sub-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Add margin to the container elements */
+.section-container,
+.problem-details-container,
+.exploration-details-container,
+.solution-details-container,
+.reflection-details-container,
+.proud-details-container {
+  margin-bottom: 40px;
+}
+
+/* Add margin to the container columns */
+.problem-containers,
+.exploration-containers,
+.solution-containers,
+.reflection-containers,
+.proud-containers {
+  margin-bottom: 40px;
+}
+
+/* Add margin to the individual containers */
+.details-container {
+  margin-bottom: 20px;
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#noBorderDetails {
+  border: none;
+  border-color: transparent;
+  border-radius: 0rem;
 }
 
 /* Profile Section */
@@ -207,20 +286,6 @@ section {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1em;
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-/* Icons */
-
-.icon {
-  cursor: pointer;
-  height: 2rem;
 }
 
 /* Buttons */
@@ -290,16 +355,6 @@ section {
   border-radius: 2rem;
 }
 
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-}
-
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -330,6 +385,8 @@ section {
   flex-direction: column;
 }
 
+/* Article Style */
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -350,15 +407,31 @@ article .icon {
   cursor: default;
 }
 
+.article-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-container article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.article-container article h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article-container article p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
 /* Project Section */
 
 #projects {
   position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
 }
 
 .project-img {
@@ -417,41 +490,41 @@ article .icon {
   height: 2.5rem;
 }
 
-/* Footer Section */
+/* Problem Statement Section */
 
-footer {
-  height: 26vh;
-  margin: 0 1rem;
+.inline-container {
+  display: flex;
+  align-items: center;
 }
 
-footer p {
-  text-align: center;
+.problem-image {
+  width: 600px;
+  /* Adjust the width as desired */
+  height: auto;
+  margin-right: 20px;
 }
 
-/* Add margin to the container elements */
-.section-container,
-.exploration-details-container,
-.solution-details-container,
-.reflection-details-container,
-.proud-details-container {
-  margin-bottom: 40px;
+/* Problem 2 column */
+.row {
+  display: flex;
+  width: 100%;
 }
 
-/* Add margin to the container columns */
-.problem-containers,
-.exploration-containers,
-.solution-containers,
-.reflection-containers,
-.proud-containers {
-  margin-bottom: 40px;
+.column {
+  flex: 1;
+  padding: 10px;
 }
 
-/* Add margin to the individual containers */
-.details-container {
-  margin-bottom: 20px;
+/* Problem Team Photo */
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-/* Add this CSS code to your existing style.css file */
+/* Reflection Section */
 
 .reflection-details-container {
   display: flex;
@@ -465,32 +538,19 @@ footer p {
   margin-bottom: 20px;
 }
 
-.article-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.article-container article {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 .icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  cursor: pointer;
+  height: 2rem;
 }
 
-.article-container article h3 {
-  font-size: 18px;
-  font-weight: bold;
+#smallIconImg {
+  max-width: 50px;
 }
 
-.article-container article p {
-  font-size: 16px;
-  margin-top: 5px;
-}
+/* Exploration Section */
 
 .exploration-sub-title {
   margin-bottom: 10px;
@@ -498,13 +558,113 @@ footer p {
   color: #545454;
 }
 
+/* Dailies */
+.collapsible-header {
+  cursor: pointer;
+}
+
+.collapsible-content {
+  display: block;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.collapsible-content.collapsed {
+  max-height: 0;
+}
+
+/* Multiple Image Styles */
+
+.four-image-row {
+  display: flex;
+}
+
+.four-image-row img {
+  width: 25%;
+  max-width: 100%;
+  height: 200px;
+}
+
+.two-image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.two-image-row img {
+  width: 50%;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+}
+
+.three-image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.three-image-row img {
+  width: 33.3%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Activity */
+
 .activity-content p {
   font-size: 16px;
 }
 
+.activity-details {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.activity-content {
+  flex-grow: 1;
+}
+
+.activity-image {
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.activity-image img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/* Solution Section */
+
 .solution-sub-title {
   margin-bottom: 20px;
 }
+
+.tech-detail {
+  margin-left: 20px;
+}
+
+#techLogo {
+  max-width: 150px;
+}
+
+.feedback-box {
+  background: lightgray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.feedback-content {
+  margin-bottom: 0px;
+}
+
+/* Project Process Section */
+
+/* Research */
 
 .research-article iframe {
   margin-top: 10px;
@@ -518,6 +678,52 @@ footer p {
 .research-article p {
   margin-top: 10px;
   font-size: 16px;
+}
+
+.research-details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+}
+
+.research-details-container div {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.research-article {
+  width: auto;
+  display: block;
+}
+
+/* Scroll Styles */
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-top-button:hover {
+  opacity: 1;
+}
+
+.scroll-top-button svg {
+  transform: rotate(180deg);
 }
 
 /* Mobile Styles */
@@ -551,210 +757,32 @@ footer p {
   }
 }
 
-.inline-container {
-  display: flex;
-  align-items: center;
+/* Styles for mobile devices with a maximum width of 767 pixels */
+@media (max-width: 767px) {
+  img {
+    /* Add mobile-specific styles here */
+    /* For example, if you want to reduce the image size on mobile: */
+    max-width: 80%;
+  }
 }
 
-.problem-image {
-  width: 600px;
-  /* Adjust the width as desired */
-  height: auto;
-  margin-right: 20px;
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+  /* Override the max-width style for mobile devices */
+  img[style*="max-width"] {
+    max-width: none !important;
+  }
 }
 
-#problem {
-  padding: 40px;
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+  /* Override the width for mobile devices */
+  iframe {
+    width: auto; /* Set the iframe width to its intrinsic width */
+  }
 }
 
-.title {
-  font-size: 36px;
-}
-
-.section__sub-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-body {
-  font-size: 20px;
-  /* Decrease the font size as desired */
-}
-
-p {
-  font-size: 20px;
-  /* Decrease the font size as desired */
-}
-
-h1 {
-  font-size: 38px;
-  /* Decrease the font size as desired */
-}
-
-h2 {
-  font-size: 30px;
-  /* Decrease the font size as desired */
-}
-
-h3 {
-  font-size: 26px;
-  /* Decrease the font size as desired */
-}
-
-.title {
-  font-size: 44px;
-  /* Decrease the font size as desired */
-}
-
-/* ... Rest of the CSS code ... */
-
-#problem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.scroll-top-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  width: 50px;
-  height: 50px;
-  background-color: #333;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.scroll-top-button:hover {
-  opacity: 1;
-}
-
-.scroll-top-button svg {
-  transform: rotate(180deg);
-}
-
-.details-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  /* Align all text to the left */
-}
-
-.activity-details {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 10px;
-  text-align: left;
-  /* Align text within activity details to the left */
-}
-
-.activity-content {
-  flex-grow: 1;
-}
-
-.activity-image {
-  margin-left: 20px;
-  flex-shrink: 0;
-}
-
-.activity-image img {
-  max-width: 250px;
-  max-height: 250px;
-}
-
-.collapsible-header {
-  cursor: pointer;
-}
-
-.collapsible-content {
-  display: block;
-  transition: max-height 0.3s ease;
-  overflow: hidden;
-}
-
-.collapsible-content.collapsed {
-  max-height: 0;
-}
-
-.four-image-row {
-  display: flex;
-  /* justify-content: space-between;
-  align-items: center; */
-}
-
-.four-image-row img {
-  width: 25%;
-  /* Adjust this value to control the size of the images */
-  max-width: 100%;
-  height: 200px;
-}
-
-.two-image-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.two-image-row img {
-  width: 50%;
-  max-width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  height: auto;
-}
-
-.three-image-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.three-image-row img {
-  width: 33.3%;
-  /* Adjust this value to control the size of the images */
-  max-width: 100%;
-  height: auto;
-}
-
-.research-details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-}
-
-.research-details-container div {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.research-article {
-  width: auto;
-  display: block;
-}
-
-img {
-  max-width: 550px;
-  height: auto;
-}
+/* Slideshow CSS */
 
 .centered-container {
   display: flex;
@@ -884,22 +912,4 @@ img {
 
 h3.slideshowTitle {
   text-align: center;
-}
-
-.tech-detail {
-  margin-left: 20px;
-}
-
-#smallIconImg {
-  max-width: 50px;
-}
-
-.feedback-box {
-  background: lightgray;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.feedback-content {
-  margin-bottom: 0px;
 }
