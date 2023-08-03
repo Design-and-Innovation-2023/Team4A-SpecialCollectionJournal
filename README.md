@@ -4,7 +4,7 @@
 
 Welcome to our static website showcasing the journey of our team in developing a website dedicated to presenting Alexander Thomson's extraordinary collection.
 
-Access our static website here: https://design-and-innovation-2023.github.io/Team4A-SpecialCollectionJournal/ 
+Access our static website here: https://whathellahor.github.io/3003-uog/
 
 ## Problem Statement
 We aim to showcase Alexander Thomson's special collection, housed at the Mitchell Library, to a wider audience and raise awareness about his significant architectural contributions.
@@ -25,7 +25,7 @@ The website boasts several captivating features, providing users with an immersi
 
 6. **Social Media Page:** Stay updated with the latest posts related to Alexander Thomson on Instagram, Facebook, and Twitter, connecting with fellow enthusiasts and architecture aficionados.
 
-View our solution website here: https://design-and-innovation-2023.github.io/Team4a-AlexanderThomson/ 
+View our solution website here: https://whathellahor.github.io/3003-alexanderthomson/
 
 # How to Use Our Static Website
 
