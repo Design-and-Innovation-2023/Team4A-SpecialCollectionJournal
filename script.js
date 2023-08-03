@@ -1,3 +1,5 @@
+// Toggle Hamburger Menu
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -5,6 +7,8 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+// Slideshow js
 
 let caledoniaSlideIndex = 1;
 let buckHeadSlideIndex = 1;
@@ -25,14 +29,6 @@ showSlides(lilybankIndex, "lilybank");
 showSlides(sirRobertIndex, "sirRobert");
 showSlides(sixtyIndex, "sixty");
 showSlides(eglintonIndex, "eglinton");
-
-// function plusSlides(n, buildingName) {
-//   if (buildingName === "caledonia") {
-//     showSlides((caledoniaSlideIndex += n), "caledonia");
-//   } else if (buildingName === "buckHouse") {
-//     showSlides((buckHouseSlideIndex += n), "buckHouse");
-//   }
-// }
 
 function currentSlide(n, buildingName) {
   if (buildingName === "caledonia") {
