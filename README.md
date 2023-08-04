@@ -38,3 +38,14 @@ View our solution website here: https://whathellahor.github.io/3003-alexandertho
 | `Project Process` | A very detailed documentation on the team's development process. This includes pre-development, planning and final solution. |
 | `Reflection` | Highlights our key takeaways and reflection everyday. |
 | `Proud` | Highlights our key achievements. |
+
+# The Team
+
+| Member  | Student ID |
+| ------------- | ------------- |
+| Ng Zi Hao | 2717965N |
+| Chan Xue Li | 2717950C |
+| Tay Yi Lin | 2717967T |
+| Chrystal Lim Jing Yee | 2717947L |
+| Per Yuen Yenn Shermaine | 2717904P |
+| Wong Jing Yong Shawn | 2717879W |
