@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+  overflow-x: hidden;
 }
 
 p {
@@ -697,6 +698,28 @@ article .icon {
 .research-article {
   width: auto;
   display: block;
+}
+
+/* Inspiration Image Style */
+.two-images-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one-image-row {
+  flex-basis: 48%;
+  max-width: 500px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.one-image-row img {
+  width: 100%;
+  height: auto;
+}
+
+.right-image {
+  vertical-align: middle;
 }
 
 /* Scroll Styles */
